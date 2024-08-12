@@ -61,8 +61,7 @@ for page_num in range(len(pdf_document)):
   return extracted_text
 ```
 
-
-## Function to process text with NLP
+# Function to process text with NLP
 
 ```{python}
 def process_text_with_nlp(extracted_text): 
@@ -95,7 +94,7 @@ def upsert_salesforce_data(data, unique_field):
     sf.Your_Object_Name\_\_c.create(data) 
     print(f"Created new record with {unique_field} = {data\[unique_field\]}")
 
-```         
+```
 
 # Web scraping with Selenium
 
@@ -149,7 +148,7 @@ def scrape_and_process_website(url):
     os.remove(pdf_path) 
   driver.quit()
 
-```         
+```
 
 # Main function to run the process
 
@@ -166,26 +165,26 @@ def main():
     main()
 ```
 
-
 ### **Explanation:**
 
-1. **YAML Front Matter**:
-   - Contains metadata such as title, author, date, and output format.
-
-2. **Python Code Blocks**:
-   - The Quarto document uses `{python}` to indicate Python code blocks. 
-   - Each block contains the code as discussed, from importing libraries to processing data and interacting with Salesforce.
-
-3. **Running the Code**:
-   - When this document is rendered, it will execute the Python code and display the results.
+1.  **YAML Front Matter**:
+    -   Contains metadata such as title, author, date, and output format.
+2.  **Python Code Blocks**:
+    -   The Quarto document uses `{python}` to indicate Python code blocks.
+    -   Each block contains the code as discussed, from importing libraries to processing data and interacting with Salesforce.
+3.  **Running the Code**:
+    -   When this document is rendered, it will execute the Python code and display the results.
 
 ### **Configuration Steps**:
-- **Replace API Keys and Credentials**:
-  - Update `your_openai_api_key`, `your_username`, `your_password`, and `your_security_token` with your actual credentials.
-  
-- **Install Required Libraries**:
-  - Run the following command in your terminal or Quarto environment to install the necessary packages:
-  ```bash
-  pip install pymupdf pytesseract pillow requests selenium openai simple-salesforce quarto
-  ```
-  
+
+-   **Replace API Keys and Credentials**:
+
+    -   Update `your_openai_api_key`, `your_username`, `your_password`, and `your_security_token` with your actual credentials.
+
+-   **Install Required Libraries**:
+
+    -   Run the following command in your terminal or Quarto environment to install the necessary packages:
+
+    ``` bash
+    pip install pymupdf pytesseract pillow requests selenium openai simple-salesforce quarto
+    ```
